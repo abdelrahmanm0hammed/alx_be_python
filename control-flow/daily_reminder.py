@@ -6,12 +6,20 @@ match priority :
     case "high":
         if time_bounded == "yes":
             print("Reminder: ", variable," is a ", priority," task that requires immediate attention today!")
+        elif time_bounded == "no":
+            print("Note: ", variable," is a ", priority," task Consider completing it when you have free time.")
     case "medium":
         if time_bounded == "yes":
             print("Reminder: ", variable," is a ", priority," task that requires immediate attention today!")
+        elif time_bounded == "no":
+            print("Note: ", variable," is a ", priority," task Consider completing it when you have free time.")
     case "medium":
         if time_bounded == "yes":
             print("Reminder: ", variable," is a ", priority," task that requires immediate attention today!")
+        elif time_bounded == "no":
+            print("Note : ", variable," is a ", priority," task. Consider completing it when you have free time.")
     case "low":
-        if time_bounded == "no":
+        if time_bounded == "yes":
+            print("Reminder: ", variable," is a ", priority," task that requires immediate attention today!")
+        elif time_bounded == "no":
             print("Note : ", variable," is a ", priority," task. Consider completing it when you have free time.")
